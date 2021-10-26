@@ -1,0 +1,78 @@
+@import 'lib/vars';
+@import 'lib/mixins';
+@import 'lib/reboot';
+@import "./lib/fontface";
+
+html,
+body {
+    font-size: $base * 2;
+    font-family: $font_family_base;
+    line-height: $base * 3;
+    color: $body_color;
+    min-height: 100vh;
+}
+
+//  Clases Globales
+
+// Container (Row) Display (Column)
+
+.container_center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container_spaceB {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container_spaceA {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.container_spaceE {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.display_center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.display_spaceB {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.display_spaceA {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.display_spaceE {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.header {
+    background-color: #FFFFFF;
+    height: $height_header;
+}
+
+.content {
+    height: calc(100vw - $height_header);
+}

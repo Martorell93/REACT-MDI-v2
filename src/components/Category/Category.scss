@@ -1,0 +1,70 @@
+@import "../../assets/sass/main.scss";
+@import "../../assets/sass/lib/vars.scss";
+
+//Category
+.category {
+    .category_box{
+        width: 152px;
+        height: 34px;
+        background-color: $color_white;
+        border-radius: 2px;
+        margin-right: 8px;
+        .category_dots {
+            width: 9px;
+            height: 10px;
+        }
+        .red {
+            color: $color_category_red;
+        }
+        .oranje {
+            color: $color_category_oranje;
+        }
+        .green {
+            color: $color_category_green;
+        }
+        .blue {
+            color: $color_category_blue;
+        }
+        .purple {
+            color: $color_category_purple;
+        }
+        .grey {
+            color: $color_category_grey;
+        }
+    }
+    
+    .add_category {
+        width: 26px;
+        height: 28px;
+        border-radius: 3px;
+        background-color: $color_primary_bold;
+        border: none;
+        .add {
+            color: $color_white;
+            
+        }
+    }
+}
+
+.category_dots {
+    width: 9px;
+    height: 10px;
+}
+.red {
+    color: $color_category_red;
+}
+.oranje {
+    color: $color_category_oranje;
+}
+.green {
+    color: $color_category_green;
+}
+.blue {
+    color: $color_category_blue;
+}
+.purple {
+    color: $color_category_purple;
+}
+.grey {
+    color: $color_category_grey;
+}

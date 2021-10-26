@@ -1,0 +1,54 @@
+$font_family_base: 'Source Sans Pro',
+'Helvetica',
+Arial,
+sans_serif;
+$font_size_base: 16px;
+$font_weight_base: normal;
+$line_height_base: 1.4;
+$body_color: #333;
+$body_bg: #fff;
+
+
+$headings_margin_bottom: 1em;
+$paragraph_margin_bottom: 1em;
+
+$dt_font_weight: bold;
+
+$link_color: #345c8d;
+$link_decoration: none;
+$link_hover_color: darken($link_color, 10%);
+$link_hover_decoration: none;
+$table_cell_padding: .5em;
+
+$text_muted: lighten($body_color, 15%);
+
+$base: .5rem;
+
+// Variables globales del proyecto
+
+//Colores principales
+$color_primary_light: #73BAFF;
+$color_primary_bold: #5CAFFF;
+$color_background: #DCDCDC;
+$color_category_red: #FF0000;
+$color_category_oranje: #FFA500;
+$color_category_green: #27AE60;
+$color_category_blue: #2D9CDB;
+$color_category_purple: #BB6BD9;
+$color_category_grey: #BDBDBD;
+$color_white: #FFFFFF;
+$color_black: #000000;
+$color_header_icons: #B9B9B9;
+$color_column_header_left: #8FC7FD;
+
+// Fuentes principales
+$font_text: 14px;
+$font_header: 16px;
+$font_text_bold: 700;
+$font_text_normal: 400;
+
+//Height
+$height_header: 58px;
+$height_column_header: 69px;
+$height_column_header_little: 46px;
+$height_column_text: 74px;
