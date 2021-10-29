@@ -1,0 +1,27 @@
+@import "../../assets/sass/main.scss";
+@import "../../assets/sass/lib/vars.scss";
+
+.whole_menu {
+    background-color: $color_background;
+    padding: 4px 4px 2px 4px;
+    width: 200px;
+    .menu_sections {
+        background-color: $color_white;
+        margin-bottom: 2px;
+        padding: 0.5em;
+        width: 100%;
+        img {
+            width: 14px;
+            height: 14px;
+        }
+        p {
+            margin-bottom: 0;
+        }
+    }
+    .menu_sections:hover {
+        background-color: rgba(115, 186, 255, 0.7);
+        p {
+            color: $color_white;
+        }
+    }
+}

@@ -84,7 +84,20 @@
                 font-weight: 700;
             }
         }
-        .ellipsis {
-            color: #888888;
+        .header_toggle {
+            cursor: pointer;
+            .menu {
+                display: none;
+            }
+            .opened {
+                display: block;
+                position:absolute;
+                right: 1em;
+                top: $height_header;
+            }
+            .ellipsis {
+                color: #888888;
+            }
         }
+        
 }

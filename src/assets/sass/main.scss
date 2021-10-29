@@ -76,3 +76,8 @@ body {
 .content {
     height: calc(100vw - $height_header);
 }
+
+.button {
+    background-color: transparent;
+    border: none;
+}
