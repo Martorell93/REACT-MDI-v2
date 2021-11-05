@@ -3,6 +3,11 @@
 @import 'lib/reboot';
 @import "./lib/fontface";
 
+.todo {
+    background-color: #DCDCDC;
+    height: 100vw;
+}
+
 html,
 body {
     font-size: $base * 2;

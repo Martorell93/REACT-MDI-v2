@@ -1,29 +1,49 @@
 import React from 'react'
 import Message from './Message'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faCircle } from '@fortawesome/free-solid-svg-icons'
+import './OpenChat.scss'
 
 const Openchat = (props) => {
     return (
         <div className="open_chat">
-            <div className="chat_header_top">
-                <h3 className="chat_title">{props.title.toUpperCase()}</h3>
-                <div className="chat_category">{props.category.join(" ")}</div>
-            </div>
-            <div className="chat_header_low">
-                <div className="chat_participants">{props.participants.join(" ")}</div>
+            <div className="chat_header">
+                <div className="chat_header_top">
+                    <h3 className="chat_title">{props.title.toUpperCase()}</h3>
+                    <div className="chat_category container_center">
+                            {
+                                props.category.map((chat_category, i) => (
+                                    <div className={chat_category}>
+                                        <FontAwesomeIcon key={i} icon={faCircle} className='category_dots' />
+                                    </div>
+                                ))
+                            }
+                        </div>
+                </div>
+                <div className="chat_header_low">
+                    {
+                        props.participants.map((chat_img, i) => (
+                            <div className="contact_image">
+                                <img key={i} src={chat_img} alt="contact image" className={i}/>
+                            </div>
+                        ))
+                    }
+                </div>
             </div>
             <div className="chat_content">
                 {
                     props.history.map((history_, i) => (
                         <Message key={i} user={history_.user}
                         message={history_.message}
-                        time={history_.time}/>
+                        time={history_.time} foto={history_.foto}/>
                     ))
                 }
-                {props.history.time}
             </div>
-            <div className="chat_footer">
+            <div className="chat_footer container_spaceB">
+                <div className="chat_footer_left">
                 <input type="text" className="chat_new_message" placeholder="Escribir mensaje..."/>
-                <button className="chat_send_message">Enviar</button>
+                </div>
+                <button className="button chat_send_message">Enviar</button>
             </div>
         </div>
     )

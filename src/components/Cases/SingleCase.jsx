@@ -1,6 +1,6 @@
 import React from 'react'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faCircle, faSlash, faThumbtack, faVolumeUp } from '@fortawesome/free-solid-svg-icons'
+import { faCircle, faThumbtack, faVolumeUp } from '@fortawesome/free-solid-svg-icons'
 
 
 // const SingleCase = ({ title }) => {

@@ -1,0 +1,52 @@
+@import "../../assets/sass/main.scss";
+@import "../../assets/sass/lib/vars.scss";
+@import "../Category/Category.scss";
+
+//Clases de estilo que aplican al archivo Connected.jsx
+
+.chats_header {
+    height: $height_column_header_little;
+    background-color: $color_column_header_left;
+    .chats_title {
+        margin-bottom: 0;
+        color: $color_white;
+        font-weight: 700;
+        font-size: 1em;
+    }
+    .add_chat {
+        margin-left: 0.5em;
+        width: 1.625em;
+        height: 1.75em;
+        border-radius: 0.1875em;
+        background-color: $color_primary_bold;
+        border: none;
+        .add {
+            color: $color_white;
+        }
+    }
+}
+.chats_contacts {
+    background-color: #E7E7E7;
+    display: flex;
+    flex-direction: column;
+    .contacts_content {
+        margin: 4px 4px 2px 4px;
+        .contact {
+            background-color: $color_white;
+            margin-bottom: 2px;
+            padding: 4px;
+            .contact_right {
+                margin-left: 0.75em;
+                .contact_name {
+                    margin-left: 0.75em;
+                    margin-bottom: 0;
+                }
+            }
+            .contact_left div {
+                display: flex;
+                align-items: center;
+                margin-right: 0.75em;
+            }
+        }
+    }
+}

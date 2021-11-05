@@ -1,6 +1,6 @@
 import React from 'react'
 import Header from './Header/Header'
-import "../assets/sass/main.scss"
+import "./Content.scss"
 import Cases from './Cases/Cases'
 import Connected from './Connected/Connected'
 import Chats from './Chats/Chats'
@@ -11,7 +11,7 @@ const App = () => {
 
 
   return (
-    <div>
+    <div className='todo'>
       <div className='header'>
         <Header />
       </div>

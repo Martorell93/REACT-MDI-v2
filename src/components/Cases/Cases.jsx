@@ -2,7 +2,7 @@ import React from 'react'
 import SingleCase from './SingleCase'
 import { cases } from './../../models/cases'
 import Category from '../Category/Category'
-import '../content.scss'
+import './Cases.scss'
 
 const Cases = () => {
     return (

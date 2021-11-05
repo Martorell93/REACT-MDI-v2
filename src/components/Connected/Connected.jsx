@@ -2,6 +2,7 @@ import { faPlus, faCircle } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react'
 import { contacts } from '../../models/contacts'
+import './Connected.scss'
 
 const Connected = () => {
     return (

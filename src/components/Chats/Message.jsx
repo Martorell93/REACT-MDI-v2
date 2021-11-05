@@ -1,11 +1,18 @@
 import React from 'react'
 
 const Message = (props) => {
+
+    const userClass = [
+        "message_chat",
+        props.user == "Johanna Doe" ? "user_chat" : ""
+    ]
+
     return (
-        <div className="message">
-            <div className="message_chat">
+        <div className="message container_spaceB">
+            <div className={userClass.join(" ")}>
                 <div className="message_chat_header">
-                    <img src="" alt="profile picture sender" className="message_sender_picture" />
+                    <img src={props.foto} alt="profile picture sender" className="message_sender_picture" />
+    
                     <p className="message_sender_name">{props.user}</p>
                 </div>
                 <div className="message_chat_content">
