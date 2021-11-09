@@ -23,7 +23,8 @@ const Chats = () => {
                         participants={chats_.participants} 
                         category={chats_.category}
                         lastChanged={chats_.lastChanged}
-                        recived={chats_.recived} Openchat={Openchat()} />
+                        recived={chats_.recived}
+                        open={chats_.open} Openchat={Openchat()} />
                     ))
                 }
             </ul>

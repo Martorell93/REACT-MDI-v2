@@ -18,22 +18,26 @@
                 font-weight: 700;
             }
         }
-        .button {
-            .muted_true {
-                color: $color_primary_bold;
-            }
-            .muted_false {
-                color: #CDCDCD;
-            }
-            .thumbtack {
-                transform: rotate(45deg);
-            }
-            .icon_pinned {
-                color: $color_primary_bold;
-            }
-            .icon_no_pinned {
-                color: #CDCDCD;
-            }
+        .muted_true_open {
+            color: $color_white;
+        }
+        .muted_true {
+            color: $color_primary_bold;
+        }
+        .muted_false {
+            color: #CDCDCD;
+        }
+        .thumbtack {
+            transform: rotate(45deg);
+        }
+        .icon_open {
+            color: $color_white;
+        }
+        .icon_pinned {
+            color: $color_primary_bold;
+        }
+        .icon_no_pinned {
+            color: #CDCDCD;
         }
     }
     .chat_content {
@@ -59,7 +63,17 @@
             }
         }
     }
-    
-    
+}
+.open {
+    background-color: $color_primary_bold;
+    color: $color_white;
+    .chat_title p {
+        color:  $color_white;
+    }
+    .chat_content {
+        .chat_date p{
+        color: $color_white;
+        }
+    }
     
 }

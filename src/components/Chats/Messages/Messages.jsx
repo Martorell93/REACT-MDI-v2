@@ -19,8 +19,12 @@ const Messages = (props) => {
         props.pinned ? "pinned" : ""
     ]
 
+    const openClass = [
+        props.open ? 'open' : '',
+    ]
+
     return (
-        <a href="#" className="chat_info"><li>
+        <a href="#" className={`${openClass} chat_info`}><li>
             <header className="chat_header container_spaceB">
                 <div className="chat_title">
                     {props.recived ? 
@@ -32,6 +36,12 @@ const Messages = (props) => {
                 <div className="chat_right container_center">
                     <button className={mutedButtonClass.join(" ")}>
                     {
+                        props.muted && props.open ?
+                        <div className="muted_true_open">
+                            <FontAwesomeIcon icon={faVolumeUp} className='icon_muted_open'/>
+                            {/* <FontAwesomeIcon icon={faSlash} className='slash slash_muted'/> */}
+                        </div>
+                        :
                         props.muted ?
                         <div className="muted_true">
                             <FontAwesomeIcon icon={faVolumeUp} className='icon_muted'/>
@@ -47,6 +57,9 @@ const Messages = (props) => {
                     </button>
                     <button className={pinnedButtonClass.join(" ")}>
                         {
+                            props.pinned && props.open ?
+                            <FontAwesomeIcon icon={faThumbtack} className='thumbtack icon_open'/>
+                            :
                             props.pinned ?
                             <FontAwesomeIcon icon={faThumbtack} className='thumbtack icon_pinned'/>
                             :
@@ -76,7 +89,7 @@ const Messages = (props) => {
                         }
                     </div>
                     <div className="chat_date">
-                        {props.lastChanged}
+                        <p>{props.lastChanged}</p>
                     </div>
                 </div>
             </div>
