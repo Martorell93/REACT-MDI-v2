@@ -20,7 +20,7 @@ const Messages = (props) => {
     ]
 
     return (
-        <li className="chat_info">
+        <a href="#" className="chat_info"><li>
             <header className="chat_header container_spaceB">
                 <div className="chat_title">
                     {props.recived ? 
@@ -80,7 +80,7 @@ const Messages = (props) => {
                     </div>
                 </div>
             </div>
-        </li>
+        </li></a>
     )
 }
 

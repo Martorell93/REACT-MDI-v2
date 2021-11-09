@@ -1,0 +1,30 @@
+@import "../../../../assets/sass/main.scss";
+@import "../../../../assets/sass/lib/vars.scss";
+@import "../../../Category/Category.scss";
+
+.message_chat {
+    margin: 4px 232px 4px 12px;
+    background-color: $color_white;
+    font-size: 14px;
+    .message_chat_header {
+        display: flex;
+        margin: 8px 0 8px 8px;
+        .message_sender_picture {
+            margin-right: 13px;
+        }
+        .message_sender_name {
+            font-weight: 700;
+        }
+    }
+    .message_chat_content {
+        margin: 0 75px 12px 45px;
+    }
+}
+.user_chat {
+    margin-left: 232px;
+    margin-right: 21px;
+}
+.message_time {
+    color: #888888;
+    font-size: 12px;
+}

@@ -4,67 +4,62 @@
 
 .chat_info {
     background-color: $color_white;
-    margin-bottom: 0.125em;
+    margin-bottom: 0.125rem;
     width: 100%;
-    .chat_title {
-        text-align: start;
-        margin-right: 80px;
-    }
-    .recived {
-        font-weight: 700;
-    }
-    .button {
-        border: none;
-        background-color: transparent;
-        .muted_true {
-            color: $color_primary_bold;
+    height: 100%;
+    .chat_header {
+        margin: 0.5rem 0.75rem 0.75rem 0.75rem;
+        .chat_title {
+            text-align: start;
+            color: $color_black;
+            min-width: 12.5rem;
+            margin-right: 55px;
+            .recived {
+                font-weight: 700;
+            }
         }
-        .muted_false {
-            color: #CDCDCD;
+        .button {
+            .muted_true {
+                color: $color_primary_bold;
+            }
+            .muted_false {
+                color: #CDCDCD;
+            }
+            .thumbtack {
+                transform: rotate(45deg);
+            }
+            .icon_pinned {
+                color: $color_primary_bold;
+            }
+            .icon_no_pinned {
+                color: #CDCDCD;
+            }
         }
-        .thumbtack {
-            transform: rotate(45deg);
+    }
+    .chat_content {
+        margin: 0 0.75rem 0.5rem 0.75rem;
+        .chat_content_left{
+            display: flex;
+             .contact_image {
+                 margin-left: -0.5em;
+             }:first-child {
+                 margin-left: 0;
+             }
         }
-        .icon_pinned {
-            color: $color_primary_bold;
+        .chat_content_right {
+            .category_dots {
+                width: 0.5625rem;
+                height: 0.625rem;
+                margin-left: 0.125rem;
+            }
+            .chat_date {
+                margin-left: 0.75rem;
+                color: #888888;
+                font-size: 0.75rem;
+            }
         }
-        .icon_no_pinned {
-            color: #CDCDCD;
-        }
-    }
-    .category_dots {
-        width: 9px;
-        height: 10px;
-        margin-left: 2px;
-    }
-    .red {
-        color: $color_category_red;
-    }
-    .oranje {
-        color: $color_category_oranje;
-    }
-    .green {
-        color: $color_category_green;
-    }
-    .blue {
-        color: $color_category_blue;
-    }
-    .purple {
-        color: $color_category_purple;
-    }
-    .grey {
-        color: $color_category_grey;
-    }
-    .chat_date {
-        margin-left: 10px;
     }
     
-    .chat_content_left{
-       display: flex;
-        .contact_image {
-            margin-left: -0.5em;
-        }:first-child {
-            margin-left: 0;
-        }
-    }
+    
+    
 }

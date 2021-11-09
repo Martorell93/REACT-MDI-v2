@@ -1,13 +1,13 @@
 import React from 'react'
-import Message from './Message'
+import Message from './Message/Message'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faCircle } from '@fortawesome/free-solid-svg-icons'
 import './OpenChat.scss'
 
 const Openchat = (props) => {
     return (
-        <div className="open_chat">
-            <div className="chat_header">
+        <section className="open_chat">
+            <header className="chat_header">
                 <div className="chat_header_top">
                     <h3 className="chat_title">{props.title.toUpperCase()}</h3>
                     <div className="chat_category container_center">
@@ -29,8 +29,8 @@ const Openchat = (props) => {
                         ))
                     }
                 </div>
-            </div>
-            <div className="chat_content">
+            </header>
+            <article className="chat_content">
                 {
                     props.history.map((history_, i) => (
                         <Message key={i} user={history_.user}
@@ -38,14 +38,14 @@ const Openchat = (props) => {
                         time={history_.time} foto={history_.foto}/>
                     ))
                 }
-            </div>
-            <div className="chat_footer container_spaceB">
+            </article>
+            <footer className="chat_footer container_spaceB">
                 <div className="chat_footer_left">
                 <input type="text" className="chat_new_message" placeholder="Escribir mensaje..."/>
                 </div>
                 <button className="button chat_send_message">Enviar</button>
-            </div>
-        </div>
+            </footer>
+        </section>
     )
 }
 

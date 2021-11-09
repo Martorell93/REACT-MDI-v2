@@ -5,7 +5,7 @@ import Cases from './Cases/Cases'
 import Connected from './Connected/Connected'
 import Chats from './Chats/Chats'
 import { chats } from '../models/chats'
-import Openchat from './Chats/Openchat'
+import Openchat from './Chats/OpenChat/Openchat'
 
 const App = () => {
 
@@ -18,9 +18,9 @@ const App = () => {
       <div className="content container">
         <div className="content_left">
           <Cases />
-          <div className="content_left_low">
+        </div>
+        <div className="content_left_low">
             <Connected />
-          </div>
         </div>
         <div className="content_right">
           <Chats />

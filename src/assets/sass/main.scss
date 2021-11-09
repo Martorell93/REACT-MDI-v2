@@ -5,6 +5,16 @@
 
 .todo {
     background-color: #DCDCDC;
+    height: 100vh;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+}
+.header {
+    height: auto;
+}
+.content {
+    flex-basis: 100%;
 }
 
 html,

@@ -2,10 +2,9 @@
 @import "../assets/sass/lib/vars.scss";
 
 .content {
-    height: $height_content;
     display: grid;
     grid-template-columns: 1fr 1fr 2fr;
-    grid-template-rows: 2fr 200px;
+    grid-template-rows: 1fr auto;
     grid-template-areas: "content-left content-mid content-right"
                           "content-left-low content-mid-low content-right";
     p, h1, h2, h3, h4, h5, h6 {
@@ -16,9 +15,9 @@
 //Content left
 .content_left {
     grid-area: content-left;
-    .content_left_low {
-        grid-area: content-left-low;
-    }
+}
+.content_left_low {
+    grid-area: content-left-low;
 }
 
 
