@@ -18,12 +18,12 @@ const HeaderToggle = () => {
 
     return (
         <div className="header_toggle" onClick={toggleMenu}>
-            <button className='button'>
+            <div className='button'>
                 <FontAwesomeIcon icon={faEllipsisV} className='ellipsis'/>
-            <div className={menuClasses}>
-                <Menu/>
+                <div className={menuClasses}>
+                    <Menu/>
+                </div>
             </div>
-            </button>
         </div>
     )
 }

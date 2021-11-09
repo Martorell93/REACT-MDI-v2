@@ -5,15 +5,15 @@ import SingleMenu from './SingleMenu'
 
 const Menu = () => {
     return (
-        <div className='whole_menu'>
+        <ul className='whole_menu'>
             {
                 menuOptions.map((menuOptions_, index) => (
-                    <button className="button menu_sections">
+                    <li className="menu_sections"><a href="#" className="link">
                         <SingleMenu key={index} menu={menuOptions_}/>
-                    </button>
+                    </a></li>
                 ))
             }
-        </div>
+        </ul>
     )
 }
 
