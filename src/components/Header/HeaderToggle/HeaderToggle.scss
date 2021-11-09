@@ -1,0 +1,18 @@
+@import "../../../assets/sass/main.scss";
+@import "../../../assets/sass/lib/vars.scss";
+
+.header_toggle {
+    
+    .menu {
+        display: none;
+    }
+    .opened {
+        display: block;
+        position:absolute;
+        right: 1em;
+        top: $height_header;
+    }
+    .ellipsis {
+        color: #888888;
+    }
+}

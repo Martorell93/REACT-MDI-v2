@@ -1,7 +1,8 @@
 import { faEllipsisV } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React, { useState } from 'react'
-import Menu from '../Menu/Menu';
+import Menu from './Menu/Menu';
+import './HeaderToggle.scss'
 
 const HeaderToggle = () => {
 
@@ -17,14 +18,12 @@ const HeaderToggle = () => {
     }
 
     return (
-        <div className="header_toggle" onClick={toggleMenu}>
-            <div className='button'>
+        <button className="button header_toggle" onClick={toggleMenu}>
                 <FontAwesomeIcon icon={faEllipsisV} className='ellipsis'/>
-                <div className={menuClasses}>
+                <section className={menuClasses}>
                     <Menu/>
-                </div>
-            </div>
-        </div>
+                </section>
+        </button>
     )
 }
 

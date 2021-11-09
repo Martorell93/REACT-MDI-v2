@@ -1,5 +1,5 @@
 import React from 'react'
-import { menuOptions } from '../../models/menu'
+import { menuOptions } from '../../../../models/menu'
 import "./Menu.scss"
 import SingleMenu from './SingleMenu'
 
@@ -8,9 +8,9 @@ const Menu = () => {
         <ul className='whole_menu'>
             {
                 menuOptions.map((menuOptions_, index) => (
-                    <li className="menu_sections"><a href="#" className="link">
+                    <li className="menu_sections">
                         <SingleMenu key={index} menu={menuOptions_}/>
-                    </a></li>
+                    </li>
                 ))
             }
         </ul>

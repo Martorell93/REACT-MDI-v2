@@ -8,10 +8,12 @@
     height: $height_column_header;
     background-color: $color_column_header_left;
     .section_title {
-        margin-bottom: 5px;
+        margin-bottom: 0.3125em;
+        margin-top: 0.5em;
         color: $color_white;
         font-weight: 700;
         font-size: 1em;
+        line-height: 1.25em;
     }
 }
 .section_content {
@@ -20,46 +22,6 @@
     align-items: center;
     background-color: #E7E7E7;
     .content_cases {
-        margin: 4px 4px 2px 4px;
-        .case {
-            background-color: $color_white;
-            margin-bottom: 2px;
-            .case_left {
-                display: flex;
-                align-items: center;
-                font-size: 14px;
-                margin: 0.5em 0.75em;
-                
-                p {
-
-                    margin-left: 0.75em;
-                }
-            }
-            .case_right {
-                margin-top: 0.5em;
-                margin-bottom: 0.6875em;
-                margin-right: 0.75em;
-                margin-left: 1.875em;
-                .button {
-                    border: none;
-                    background-color: transparent;
-                    .muted_true {
-                        color: $color_primary_bold;
-                    }
-                    .muted_false {
-                        color: #CDCDCD;
-                    }
-                    .thumbtack {
-                        transform: rotate(45deg);
-                    }
-                    .icon_pinned {
-                        color: $color_primary_bold;
-                    }
-                    .icon_no_pinned {
-                        color: #CDCDCD;
-                    }
-                }
-            }
-        }
+        margin: 0.25em 0.25em 0.125em 0.25em;
     }
 }

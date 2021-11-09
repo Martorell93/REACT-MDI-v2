@@ -1,0 +1,16 @@
+@import "../../../assets/sass/main.scss";
+@import "../../../assets/sass/lib/vars.scss";
+
+.header_searchbox {
+    padding-bottom: 0.5em;
+    border-bottom: 0.0625em $color_background solid;
+    width: 19.875em;
+    .search_icon {
+        color:#888888;
+        margin-right: 0.5em;
+    }
+    .search_text {
+        border: none;
+        width: 85%;
+    }
+}

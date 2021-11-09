@@ -5,7 +5,6 @@
 
 .todo {
     background-color: #DCDCDC;
-    height: 100vw;
 }
 
 html,
@@ -78,11 +77,12 @@ body {
     height: $height_header;
 }
 
-.content {
-    height: calc(100vw - $height_header);
-}
-
 .button {
     background-color: transparent;
     border: none;
+}
+
+li, ul {
+    padding-left: 0;
+    list-style: none;
 }

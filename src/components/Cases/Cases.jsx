@@ -1,19 +1,18 @@
 import React from 'react'
-import SingleCase from './SingleCase'
+import SingleCase from './SingleCase/SingleCase'
 import { cases } from './../../models/cases'
 import Category from '../Category/Category'
 import './Cases.scss'
 
 const Cases = () => {
     return (
-        <div className="cases">
-            <div className="section_header display_center">
+        <section className="cases">
+            <header className="section_header display_center">
                 <h2 className="section_title">CASES</h2>
                 <Category/>
-            </div>
-            <div className="section_content">
-                {/* <SingleCase title="hola" muted={false} category="red" /> */}
-                <div className="content_cases">
+            </header>
+            <article className="section_content">
+                <ul className="content_cases">
                     {
                         cases.map((case_, i) => (
                             <SingleCase
@@ -24,9 +23,9 @@ const Cases = () => {
                                 category={case_.category} />
                         ))
                     }
-                </div>
-            </div>
-        </div>
+                </ul>
+            </article>
+        </section>
     )
 }
 

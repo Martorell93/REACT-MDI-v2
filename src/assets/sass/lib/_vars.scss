@@ -49,3 +49,4 @@ $height_header: 58px;
 $height_column_header: 69px;
 $height_column_header_little: 46px;
 $height_column_text: 74px;
+$height_content: calc(100vw - $height_header)

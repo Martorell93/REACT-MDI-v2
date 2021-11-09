@@ -6,18 +6,18 @@ import './Connected.scss'
 
 const Connected = () => {
     return (
-        <div className="chats">
-            <div className="chats_header container_center">
+        <section className="chats">
+            <header className="chats__header container_center">
                 <h2 className="chats_title">CONNECTED</h2>
                 <button className="add_chat">
                     <FontAwesomeIcon icon={faPlus} className='add'/>
                 </button>
-            </div>
-            <div className="chats_contacts">
-                <div className="contacts_content">
+            </header>
+            <article className="chats_contacts">
+                <ul className="contacts_content">
                     {
                         contacts.map((contacts_, i) => (
-                            <div key={i} name={contacts_.name} connected={contacts_.connected} foto={contacts_.foto} className='contact container_spaceB'>
+                            <li key={i} name={contacts_.name} connected={contacts_.connected} foto={contacts_.foto} className='contact container_spaceB'>
                                 <div className="contact_right container_center">
                                     <img src={contacts_.foto} alt="contact image" className="contact_image"/>
                                     <p className="contact_name">{contacts_.name}</p>
@@ -31,12 +31,12 @@ const Connected = () => {
                                         : null
                                 }
                                 </div>
-                            </div>
+                            </li>
                         ))
                     }
-                </div>
-            </div>
-        </div>
+                </ul>
+            </article>
+        </section>
     )
 }
 

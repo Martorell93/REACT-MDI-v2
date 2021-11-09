@@ -1,0 +1,13 @@
+@import "../../../assets/sass/main.scss";
+@import "../../../assets/sass/lib/vars.scss";
+
+.header_logo {
+    margin-right: 5em;
+}
+.logo {
+    margin-right: 0.5em;
+}
+.name {
+    font-weight: 700;
+    color: $color_black;
+}

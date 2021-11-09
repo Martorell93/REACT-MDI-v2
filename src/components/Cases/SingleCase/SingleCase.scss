@@ -1,0 +1,41 @@
+@import "../../../assets/sass/main.scss";
+@import "../../../assets/sass/lib/vars.scss";
+
+.case {
+    background-color: $color_white;
+    margin-bottom: 0.125em;
+    .case_left {
+        display: flex;
+        align-items: center;
+        font-size: 0.875em;
+        margin: 0.5em 0.75em;
+        .title {
+            margin-left: 0.75em;
+        }
+    }
+    .case_right {
+        margin-top: 0.5em;
+        margin-bottom: 0.6875em;
+        margin-right: 0.75em;
+        margin-left: 1.875em;
+        .button {
+            border: none;
+            background-color: transparent;
+            .muted_true {
+                color: $color_primary_bold;
+            }
+            .muted_false {
+                color: #CDCDCD;
+            }
+            .thumbtack {
+                transform: rotate(45deg);
+            }
+            .icon_pinned {
+                color: $color_primary_bold;
+            }
+            .icon_no_pinned {
+                color: #CDCDCD;
+            }
+        }
+    }
+}

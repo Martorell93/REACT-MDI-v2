@@ -82,7 +82,7 @@ export const chats = [
         muted: true,
         pinned: false,
         participants: ["../../src/assets/img/chats/5.1.png", "../../src/assets/img/chats/5.2.png", "../../src/assets/img/chats/5.3.png"],
-        category: ["green"],
+        category: ["blue"],
         lastChanged: "Up to 09.11.2020",
         recived: true,
         open: false

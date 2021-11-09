@@ -18,7 +18,9 @@ const App = () => {
       <div className="content container">
         <div className="content_left">
           <Cases />
-          <Connected />
+          <div className="content_left_low">
+            <Connected />
+          </div>
         </div>
         <div className="content_right">
           <Chats />

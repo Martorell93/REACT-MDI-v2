@@ -1,11 +1,11 @@
 @import "../../assets/sass/main.scss";
 @import "../../assets/sass/lib/vars.scss";
-@import "../Category/Category.scss";
+
 
 //Clases de estilo que aplican al archivo Connected.jsx
 
-.chats_header {
-    height: $height_column_header_little;
+.chats__header {
+    height: 2.875em;
     background-color: $color_column_header_left;
     .chats_title {
         margin-bottom: 0;
@@ -30,11 +30,11 @@
     display: flex;
     flex-direction: column;
     .contacts_content {
-        margin: 4px 4px 2px 4px;
+        margin: 0.25em 0.25em 0.125em 0.25em;
         .contact {
             background-color: $color_white;
-            margin-bottom: 2px;
-            padding: 4px;
+            margin-bottom: 0.125em;
+            padding: 0.25em;
             .contact_right {
                 margin-left: 0.75em;
                 .contact_name {

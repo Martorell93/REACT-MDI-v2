@@ -1,12 +1,13 @@
 @import "../assets/sass/main.scss";
 @import "../assets/sass/lib/vars.scss";
-@import "./Category/Category.scss";
 
 .content {
+    height: $height_content;
     display: grid;
     grid-template-columns: 1fr 1fr 2fr;
-    // grid-template-rows: 2fr 1fr;
-    grid-template-areas: "content-left content-mid content-right";
+    grid-template-rows: 2fr 200px;
+    grid-template-areas: "content-left content-mid content-right"
+                          "content-left-low content-mid-low content-right";
     p, h1, h2, h3, h4, h5, h6 {
         margin-bottom: 0;
     }
@@ -15,291 +16,17 @@
 //Content left
 .content_left {
     grid-area: content-left;
-    // .section_header {
-    //     height: $height_column_header;
-    //     background-color: $color_column_header_left;
-    //     .section_title {
-    //         margin-bottom: 5px;
-    //         color: $color_white;
-    //         font-weight: 700;
-    //         font-size: 1em;
-    //     }
-    // }
-    // .section_content {
-    //     display: flex;
-    //     flex-direction: column;
-    //     align-items: center;
-    //     background-color: $color_background;
-    //     .content_cases {
-    //         margin: 4px 4px 2px 4px;
-    //         .case {
-    //             background-color: $color_white;
-    //             margin-bottom: 2px;
-    //             .case_left {
-    //                 display: flex;
-    //                 align-items: center;
-    //                 font-size: 14px;
-    //                 margin: 0.5em 0.75em;
-                    
-    //                 p {
-
-    //                     margin-left: 0.75em;
-    //                 }
-    //             }
-    //             .case_right {
-    //                 margin-top: 0.5em;
-    //                 margin-bottom: 0.6875em;
-    //                 margin-right: 0.75em;
-    //                 margin-left: 1.875em;
-    //                 .button {
-    //                     border: none;
-    //                     background-color: transparent;
-    //                     .muted_true {
-    //                         color: $color_primary_bold;
-    //                     }
-    //                     .muted_false {
-    //                         color: #CDCDCD;
-    //                     }
-    //                     .thumbtack {
-    //                         transform: rotate(45deg);
-    //                     }
-    //                     .icon_pinned {
-    //                         color: $color_primary_bold;
-    //                     }
-    //                     .icon_no_pinned {
-    //                         color: #CDCDCD;
-    //                     }
-    //                 }
-    //             }
-    //         }
-    //     }
-    // }
-    // .chats_header {
-    //     height: $height_column_header_little;
-    //     background-color: $color_column_header_left;
-    //     .chats_title {
-    //         margin-bottom: 0;
-    //         color: $color_white;
-    //         font-weight: 700;
-    //         font-size: 1em;
-    //     }
-    //     .add_chat {
-    //         margin-left: 0.5em;
-    //         width: 1.625em;
-    //         height: 1.75em;
-    //         border-radius: 0.1875em;
-    //         background-color: $color_primary_bold;
-    //         border: none;
-    //         .add {
-    //             color: $color_white;
-    //         }
-    //     }
-    // }
-    // .chats_contacts {
-    //     background-color: $color_background;
-    //     display: flex;
-    //     flex-direction: column;
-    //     .contacts_content {
-    //         margin: 4px 4px 2px 4px;
-    //         .contact {
-    //             background-color: $color_white;
-    //             margin-bottom: 2px;
-    //             padding: 4px;
-    //             .contact_right {
-    //                 margin-left: 0.75em;
-    //                 .contact_name {
-    //                     margin-left: 0.75em;
-    //                     margin-bottom: 0;
-    //                 }
-    //             }
-    //             .contact_left div {
-    //                 display: flex;
-    //                 align-items: center;
-    //                 margin-right: 0.75em;
-    //             }
-    //         }
-    //     }
-    // }
+    .content_left_low {
+        grid-area: content-left-low;
+    }
 }
 
 
 //Content mid
 .content_right {
     grid-area: content-mid;
-    // .chats_header {
-    //     height: $height_column_header;
-    //     background-color: $color_primary_light;
-    //     .chats_title {
-    //         margin-bottom: 5px;
-    //         color: $color_white;
-    //         font-weight: 700;
-    //         font-size: 1em;
-    //     }
-    // }
-    // .chats_content {
-    //     display: flex;
-    //     flex-direction: column;
-    //     background-color: $color_background;
-    //     padding: 4px 4px 2px 4px;
-    //     font-size: 14px;
-    //     .chat_info {
-    //         background-color: $color_white;
-    //         margin-bottom: 2px;
-    //         width: 100%;
-    //         .chat_title {
-    //             text-align: start;
-    //             margin-right: 80px;
-    //         }
-    //         .recived {
-    //             font-weight: 700;
-    //         }
-    //         .button {
-    //             border: none;
-    //             background-color: transparent;
-    //             .muted_true {
-    //                 color: $color_primary_bold;
-    //             }
-    //             .muted_false {
-    //                 color: #CDCDCD;
-    //             }
-    //             .thumbtack {
-    //                 transform: rotate(45deg);
-    //             }
-    //             .icon_pinned {
-    //                 color: $color_primary_bold;
-    //             }
-    //             .icon_no_pinned {
-    //                 color: #CDCDCD;
-    //             }
-    //         }
-    //         .category_dots {
-    //             width: 9px;
-    //             height: 10px;
-    //             margin-left: 2px;
-    //         }
-    //         .red {
-    //             color: $color_category_red;
-    //         }
-    //         .oranje {
-    //             color: $color_category_oranje;
-    //         }
-    //         .green {
-    //             color: $color_category_green;
-    //         }
-    //         .blue {
-    //             color: $color_category_blue;
-    //         }
-    //         .purple {
-    //             color: $color_category_purple;
-    //         }
-    //         .grey {
-    //             color: $color_category_grey;
-    //         }
-    //         .chat_date {
-    //             margin-left: 10px;
-    //         }
-            
-    //         .chat_content_left{
-    //            display: flex;
-    //             .contact_image {
-    //                 margin-left: -1em;
-    //             }:first-child {
-    //                 margin-left: 0;
-    //             }
-    //         }
-    //     }
-    // }
 }
 //Content right
 .messages {
     grid-area: content-right;
-    // .open_chat {
-    //     .chat_header {
-    //         height: $height_column_header;
-    //         background-color: $color_primary_bold;
-    //         display: flex;
-    //         flex-direction: column;
-    //         justify-content: center;
-    //         .chat_header_top {
-    //             display: flex;
-    //             justify-items: flex-start;
-    //             .chat_title {
-    //                 font-size: 1em;
-    //                 color: $color_white;
-    //                 margin-left: 27px;  
-    //                 margin-right: 12px;
-    //             }
-    //             .chat_category {
-    //                 .category_dots {
-    //                     border: 1px solid $color_white;
-    //                     border-radius: 100%;
-    //                     padding: -1px;
-    //                     margin: 0;
-    //                     width: 10px;
-    //                     height: 10px;
-    //                 }
-    //             }
-    //         }
-    //         .chat_header_low {
-    //                 display: flex;
-    //                 margin-top: 6px;
-    //                 margin-left: 27px;
-    //                  .contact_image {
-    //                      margin-left: -0.5em;
-    //                  }:first-child {
-    //                      margin-left: 0;
-    //                  }
-    //         }
-    //     }
-        
-    //     .chat_content {
-    //         background-color: #F2F2F2;          
-    //         .message_chat {
-    //             margin: 4px 232px 4px 12px;
-    //             background-color: $color_white;
-    //             font-size: 14px;
-    //             .message_chat_header {
-    //                 display: flex;
-    //                 margin: 8px 0 8px 8px;
-    //                 .message_sender_picture {
-    //                     margin-right: 13px;
-    //                 }
-    //                 .message_sender_name {
-    //                     font-weight: 700;
-    //                 }
-    //             }
-    //             .message_chat_content {
-    //                 margin: 0 75px 12px 45px;
-    //             }
-    //         }
-    //         .user_chat {
-    //             margin-left: 232px;
-    //             margin-right: 21px;
-    //         }
-    //         .message_time {
-    //             color: #888888;
-    //             font-size: 12px;
-    //         }
-    //     }
-    //     .chat_footer {
-    //         height: 74px;
-    //         background-color: $color_white;
-    //     }
-    //     .chat_footer_left {
-    //         background-color: $color_white;
-    //         padding-bottom: 0.5em;
-    //         border-bottom: 0.0625em #CDCDCD solid;
-    //         width: 100%;
-    //         margin-right: 21px;
-    //         margin-top: 28px;
-    //         margin-bottom: 18px;
-    //         margin-left: 21px;
-    //         .chat_new_message {
-    //             border: none;
-    //         }
-    //         .chat_send_message {
-
-    //         }
-    //     }
-    // }
 }

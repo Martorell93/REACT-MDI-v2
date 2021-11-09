@@ -4,14 +4,14 @@
 //Category
 .category {
     .category_box{
-        width: 152px;
-        height: 34px;
+        width: 9.5em;
+        height: 2.125em;
         background-color: $color_white;
-        border-radius: 2px;
-        margin-right: 8px;
+        border-radius: 0.125em;
+        margin-right: 0.5em;
         .category_dots {
-            width: 9px;
-            height: 10px;
+            width: 0.5625em;
+            height: 0.625em;
         }
         .red {
             color: $color_category_red;
@@ -34,9 +34,9 @@
     }
     
     .add_category {
-        width: 26px;
-        height: 28px;
-        border-radius: 3px;
+        width: 1,625em;
+        height: 1.75em;
+        border-radius: 0.1875em;
         background-color: $color_primary_bold;
         border: none;
         .add {
@@ -47,8 +47,8 @@
 }
 
 .category_dots {
-    width: 9px;
-    height: 10px;
+    width: 0.5625em;
+    height: 0.625em;
 }
 .red {
     color: $color_category_red;

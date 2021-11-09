@@ -1,6 +1,7 @@
 import React from 'react'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faCircle, faThumbtack, faVolumeUp } from '@fortawesome/free-solid-svg-icons'
+import './SingleCase.scss'
 
 
 // const SingleCase = ({ title }) => {
@@ -20,7 +21,7 @@ const SingleCase = (props) => {
     ]
 
     return (
-        <div className={caseClass.join(" ")}>
+        <li className={caseClass.join(" ")}>
             <div className="case_left">
                 {
                     props.category ?
@@ -56,7 +57,7 @@ const SingleCase = (props) => {
                     }
                 </button>
             </div>
-        </div>
+        </li>
     )
 }
 

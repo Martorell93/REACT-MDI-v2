@@ -1,6 +1,6 @@
 import React from 'react'
 import Category from '../Category/Category'
-import Messages from './Messages'
+import Messages from './Messages/Messages.jsx'
 import { chats } from '../../models/chats'
 import './Chats.scss'
 
@@ -10,12 +10,12 @@ const Chats = () => {
     }
 
     return (
-        <div className="chats">
-            <div className="chats_header display_center">
+        <section className="chats">
+            <header className="chats_header display_center">
                 <h2 className="chats_title">CHATS</h2>
                 <Category />
-            </div>
-            <div className="chats_content">
+            </header>
+            <ul className="chats_content">
                 {
                     chats.map((chats_, i) => (
                         <Messages key={i} title={chats_.title}
@@ -26,8 +26,8 @@ const Chats = () => {
                         recived={chats_.recived} Openchat={Openchat()} />
                     ))
                 }
-            </div>
-        </div>
+            </ul>
+        </section>
     )
 }
 

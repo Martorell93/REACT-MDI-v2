@@ -1,24 +1,35 @@
 import React from 'react'
-import HeaderLogo from './HeaderLogo'
-import HeaderNavigation from './HeaderNavigation'
-import HeaderSearchbox from './HeaderSearchbox'
-import HeaderToggle from './HeaderToggle'
+import HeaderLogo from './HeaderLogo/HeaderLogo'
+import HeaderNavigation from './HeaderNavigation/HeaderNavigation'
+import HeaderSearchbox from './HeaderSearchBox/HeaderSearchbox'
+import HeaderToggle from './HeaderToggle/HeaderToggle'
 import "./Header.scss";
+import Tabulable from '../Tabulable'
 
 
 const Header = () => {
     return (
-        <div className='container_spaceB header'>
-            <div className="header_left container_spaceB">
-                <HeaderLogo />
-                <HeaderSearchbox />
-            </div>
+        <nav className='container_spaceB header'>
+            <ul className="header_left container_spaceB">
+                <li>
+                <Tabulable>
+                    <HeaderLogo /> 
+                </Tabulable>
+                </li>
+                <li>
+                    <HeaderSearchbox />
+                </li>
+            </ul>
 
-            <div className="header_right container_spaceB">
-                <HeaderNavigation />
-                <HeaderToggle />
-            </div>
-        </div>
+            <ul className="header_right container_spaceB">
+                <li>
+                    <HeaderNavigation />  
+                </li>
+                <li>
+                    <HeaderToggle />
+                </li>                
+            </ul>
+        </nav>
     )
 }
 
